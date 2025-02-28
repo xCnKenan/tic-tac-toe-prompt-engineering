@@ -1,0 +1,55 @@
+body {
+  background-color: #323232;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+td {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  border: 5px solid white;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+td:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Entfernt äußere Rahmen der Tabelle */
+table {
+  border-spacing: 5px;
+}
+
+tr:first-child td {
+  border-top: none;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td:first-child {
+  border-left: none;
+}
+
+td:last-child {
+  border-right: none;
+}
