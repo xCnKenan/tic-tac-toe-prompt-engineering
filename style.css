@@ -7,10 +7,16 @@ body {
   height: 100vh;
   margin: 0;
   flex-direction: column;
+  
 }
 
 h1 {
   color: white;
+}
+
+#content{
+  display: flex;
+  position: relative;
 }
 
 table {
@@ -52,4 +58,47 @@ td:first-child {
 
 td:last-child {
   border-right: none;
+}
+
+
+
+
+.win-line {
+  position: absolute;
+  z-index: 10;  /* Damit die Linie über den anderen Elementen liegt */
+  background-color: rgb(255, 255, 255);  /* Die Farbe der Gewinnlinie */
+}
+
+.horizontal {
+  height: 5px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Vertikale Mitte */
+}
+
+.vertical {
+  height: 5px;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Horizontale Mitte */
+}
+
+.diagonal-1 {
+  width: 5px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+}
+
+
+.diagonal-2 {
+  width: 5px;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  transform: rotate(-45deg);
+  transform-origin: top right;
 }
